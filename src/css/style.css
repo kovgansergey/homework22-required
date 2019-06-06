@@ -716,6 +716,73 @@ body {
   }
 }
 
+.footer {
+  position: relative;
+}
+
+.footer__map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footer__container {
+  padding-top: 69px;
+  padding-bottom: 88px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__card {
+  max-width: 373px;
+  width: 100%;
+  color: #000000;
+}
+
+.footer__title {
+  margin-bottom: 92px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  display: flex;
+}
+
+.footer__icon {
+  margin-right: 20px;
+  width: 20px;
+}
+
+.footer__text {
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.footer__textr {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.footer__textb {
+  margin: 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 26px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .modal {
   display: none;
   position: fixed;
