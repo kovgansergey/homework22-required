@@ -75,6 +75,11 @@ body {
   cursor: pointer;
 }
 
+#username-error, #phone-error, #email-error {
+  font-family: 'Museo Sans Bold', sans-serif;
+  color: #000000;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 960px;
@@ -303,16 +308,24 @@ body {
   font-size: 16px;
 }
 
+.offer-form__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.offer-form__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .offer__input {
-  margin-bottom: 25px;
   width: 240px;
 }
 
-.offer__input:first-child {
-  margin-right: 10px;
-}
-
 .offer__button {
+  margin-top: 25px;
   padding: 26px 0;
   width: 100%;
   font-size: 16px;
@@ -347,9 +360,15 @@ body {
   .offer {
     background-size: cover;
   }
-  .offer__input {
-    margin-bottom: 10px;
+  .offer-form__input {
     width: 100%;
+  }
+  .offer__input {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .offer__button {
+    margin-top: 10px;
   }
 }
 
@@ -569,7 +588,7 @@ body {
 }
 
 .brif-text__subtitle {
-  margin-bottom: 94px;
+  margin-bottom: 83px;
   font-size: 16px;
 }
 
@@ -612,11 +631,11 @@ body {
 
 .brif__input {
   width: 100%;
-  margin-bottom: 11px;
+  margin-top: 11px;
 }
 
 .brif__button {
-  margin-top: 18px;
+  margin-top: 29px;
   margin-bottom: 14px;
   width: 100%;
   height: 70px;
@@ -700,11 +719,10 @@ body {
     line-height: 24px;
   }
   .brif__input {
-    margin-bottom: 9px;
     padding: 23px;
   }
   .brif__button {
-    margin-top: 0px;
+    margin-top: 9px;
     margin-bottom: 12px;
     font-size: 14px;
   }
@@ -724,19 +742,17 @@ body {
   width: 50%;
   position: absolute;
   left: 0;
-  top: 0;
 }
 
 .footer__container {
   padding-top: 69px;
-  padding-bottom: 88px;
   display: flex;
   justify-content: flex-end;
 }
 
 .footer__card {
   max-width: 373px;
-  width: 100%;
+  width: 50%;
   color: #000000;
 }
 
@@ -781,6 +797,36 @@ body {
 .footer__link {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 991px) {
+  .footer__card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    min-height: 1098px;
+  }
+  .footer__map {
+    width: 100%;
+    bottom: 0;
+  }
+  .footer__container {
+    padding-top: 45px;
+  }
+  .footer__card {
+    width: 100%;
+  }
+  .footer__title {
+    margin-bottom: 33px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .footer__icon {
+    margin-right: 13px;
+  }
 }
 
 .modal {
